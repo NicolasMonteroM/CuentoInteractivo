@@ -7,9 +7,9 @@ let tale = [];
 let scene = [];
 
 
-class Logica{
+class Logica {
 
-    constructor(app){
+    constructor(app) {
 
         this.app = app;
 
@@ -21,27 +21,37 @@ class Logica{
         this.fifthInteraction = false;
 
         //loading tale
-        this.tale = loadStrings('./data/tale.txt');
+        this.tale = this.app.loadStrings('./data/tale.txt');
 
-    }
+        //slicing tale
+        //  this.scene = this.tale.slice(0, 30);
 
-    drawTale(){
-
-        
-
+        this.scene = this.app.loadStrings('./data/scene.txt');
 
 
     }
 
-    loadTale(){
+    drawTale() {
+
+        this.app.fill(77,53,22);
+        this.app.textSize(16);
+        this.app.textAlign(this.app.CENTER);
+        this.app.text(this.scene, 250, 200, 1200 - 500);
+
+       // console.log(this.scene);
+
+    }
+
+    loadTale() {
 
 
 
     }
 
-    saveTale(){
+    saveTale() {
 
 
+        this.app.saveStrings("./data/EditedTale.txt", tale);
 
     }
 }

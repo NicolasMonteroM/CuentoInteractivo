@@ -1,10 +1,12 @@
 new p5(function (app) {
 
     let fondo;
+    let logica;
 
     app.preload = function () {
 
         fondo = new Fondo(app);
+        logica = new Logica(app);
 
     }
 
@@ -19,6 +21,7 @@ new p5(function (app) {
 
         app.background(77,53,22);
         fondo.drawFondo();
+        logica.drawTale();
 
     }
 
