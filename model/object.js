@@ -1,6 +1,3 @@
-let posX;
-let posY;
-
 class Object {
 
     constructor(app, x, y) {
@@ -8,6 +5,10 @@ class Object {
         this.app = app;
         this.x = x;
         this.y = y;
+
+    }
+
+    drawObject(){
 
     }
 

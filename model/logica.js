@@ -14,6 +14,7 @@ class Logica {
     constructor(app) {
 
         this.app = app;
+        this.stick = new Stick(app, 0, 0);
 
         //interactions
         this.firstInteraction = false;
@@ -41,7 +42,7 @@ class Logica {
         //writing title
         this.app.textSize(30);
         this.app.textFont(this.titleFont);
-        this.app.text('The Mouse, the bird, and the Sausage', 450, 150, 1200 - 900);
+        this.app.text('The Mouse, the Bird, and the Sausage', 450, 150, 1200 - 900);
 
         //–––––––––– SLICING FIRST PART OF THE TALE ––––––––––––––//
         this.scene = this.tale.slice(0, 1);
@@ -62,7 +63,7 @@ class Logica {
 
         //the tale is going to be downloaded after finishing the interactions
         if (this.firstInteraction, this.secondInteraction, this.thirdInteraction, this.fourthtInteraction, this.fifthInteraction) {
-           
+
             //changing words 
             for (let i = 0; i < this.tale.length; i++) {
                 this.tale[i] = this.tale[i].replaceAll("wood", "WOOD");
@@ -75,7 +76,7 @@ class Logica {
             }
 
             //saving txt file
-            this.app.saveStrings(this.tale, 'EditedTale.txt');
+            this.app.saveStrings(this.tale, 'The Mouse, the Bird, and the Sausage.txt');
 
         }
     }
