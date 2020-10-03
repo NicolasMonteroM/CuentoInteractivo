@@ -3,10 +3,10 @@ let posY;
 
 class Object{
 
-    constructor(posX, posY){
+    constructor(x, y) {
 
-        this.posX = posX;
-        this.posY = posY;
+        this.x = x;
+        this.y = y;
 
     }
 

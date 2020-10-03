@@ -1,18 +1,35 @@
+new p5(function (app) {
 
-function setup(){
-    createCanvas(900, 600);
-   // controller = new Controller();
-  //  background = new Background();
+    let fondo;
 
+    app.preload = function () {
+
+        fondo = new Fondo(app);
+
+    }
+
+    app.setup = function () {
+
+        app.createCanvas(1200, 700);
+
+    }
+
+
+    app.draw = function () {
+
+        app.background(77,53,22);
+        fondo.drawBackground();
+
+
+    }
+
+    app.mouseDragged = function () {
+
+    }
+
+    app.mousePressed = function () {
+
+    }
 }
+);
 
-function draw() {
-    background(77,53,22);
-    background.drawBackground();
- //   fondoSketch.moverScreen();
-    
-}
-
-function mousePressed(){
-
-}
