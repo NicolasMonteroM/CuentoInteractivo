@@ -1,15 +1,15 @@
 class Fondo {
 
-    contructor(app) {
+    constructor(app) {
 
         this.app = app;
-        this.backgroundImage = this.app.loadImage("./data/images/background.png");
+        this.fondoImage = this.app.loadImage("./data/images/background.png");
 
     }
 
-    drawBackground(){
-       
-        this.app.image(this.backgroundImage, 0,0, 1200, 700);
+    drawFondo() {
+
+        this.app.image(this.fondoImage, -100 - (this.app.mouseX * 0.06), 0, 1500, 800);
 
     }
 

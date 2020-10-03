@@ -18,7 +18,8 @@ new p5(function (app) {
     app.draw = function () {
 
         app.background(77,53,22);
-        fondo.drawBackground();
+        fondo.drawFondo();
+       // fondo.moveFondo();
 
 
     }
