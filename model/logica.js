@@ -25,8 +25,6 @@ class Logica {
         this.font = this.app.loadFont('./data/times.ttf');
         this.titleFont = this.app.loadFont('./data/tioxo.otf');
 
-        this.stick = new Stick(this, 500, 500);
-
 
     }
 

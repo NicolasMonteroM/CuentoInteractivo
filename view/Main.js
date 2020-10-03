@@ -1,13 +1,9 @@
 new p5(function (app) {
 
-    let fondo;
-    let logica;
-
     app.preload = function () {
 
-        fondo = new Fondo(app);
-        logica = new Logica(app);
-        logica.loadTale();
+        controller = new Controller(app);
+       
 
     }
 
@@ -17,17 +13,14 @@ new p5(function (app) {
 
         //–––––––––– THE FILE IS GOING TO BE DOWNLOADED ––––––––––––––//
 
-        logica.saveTale();
+        controller.saveChanges();
 
     }
 
 
     app.draw = function () {
 
-
-        app.background(77, 53, 22);
-        fondo.drawFondo();
-        logica.drawTale();
+        controller.drawController();
 
     }
 
