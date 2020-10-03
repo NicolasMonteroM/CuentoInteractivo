@@ -7,12 +7,15 @@ new p5(function (app) {
 
         fondo = new Fondo(app);
         logica = new Logica(app);
+        logica.loadTale();
 
     }
 
     app.setup = function () {
 
         app.createCanvas(1200, 700);
+
+        logica.saveTale();
 
     }
 
