@@ -9,7 +9,7 @@ class Stick extends Elemento {
 
     drawElemento() {
 
-        this.app.image(this.stickImage, this.x, this.y, 100, 60);
+        this.app.image(this.stickImage, this.x  - (this.app.mouseX * 0.02), this.y, 100, 60);
 
     }
 
