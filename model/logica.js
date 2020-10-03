@@ -43,6 +43,8 @@ class Logica {
         this.app.textFont(this.titleFont);
         this.app.text('The Mouse, the bird, and the Sausage', 450, 150, 1200 - 900);
 
+        //–––––––––– SLICING FIRST PART OF THE TALE ––––––––––––––//
+        this.scene = this.tale.slice(0, 1);
 
         // console.log(this.scene);
 
@@ -53,13 +55,7 @@ class Logica {
         //loading tale
         this.tale = this.app.loadStrings('./data/tale.txt');
 
-        //slicing tale
-        //  this.scene = this.tale.slice(0, 30);
-
-        this.scene = this.app.loadStrings('./data/scene.txt');
-
     }
-
 
     //–––––––––– THE FILE IS GOING TO BE DOWNLOADED ––––––––––––––//
     saveTale() {

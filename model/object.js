@@ -1,33 +1,38 @@
 let posX;
 let posY;
 
-class Object{
+class Object {
 
-    constructor(x, y) {
+    constructor(app, x, y) {
 
+        this.app = app;
         this.x = x;
         this.y = y;
 
     }
 
 
-    setPosX(){
+    setPosX(x) {
 
-
-    }
-
-    setPosY(){
-
+        this.x = x;
 
     }
 
-    getPosX(){
+    setPosY(y) {
 
+        this.y = y;
 
     }
 
-    getPosY(){
+    getPosX() {
 
-        
+        return this.x;
+
+    }
+
+    getPosY() {
+
+        return this.y;
+
     }
 }
