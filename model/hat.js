@@ -1,4 +1,4 @@
-class Hat extends Object{
+class Hat extends Elemento{
 
     constructor(){
 

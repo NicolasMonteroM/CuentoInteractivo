@@ -1,4 +1,4 @@
-class Bucket extends Object{
+class Bucket extends Elemento{
 
     constructor(){
 

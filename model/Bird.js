@@ -1,4 +1,4 @@
-class Bird extends Object{
+class Bird extends Elemento{
 
     constructor(){
 

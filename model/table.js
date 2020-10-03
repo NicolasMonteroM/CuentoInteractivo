@@ -1,4 +1,4 @@
-class Tables extends Object{
+class Tables extends Elemento{
 
     constructor(){
 

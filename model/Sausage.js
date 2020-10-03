@@ -1,4 +1,4 @@
-class Sausage extends Object{
+class Sausage extends Elemento{
 
     constructor(){
 

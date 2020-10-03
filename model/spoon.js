@@ -1,4 +1,4 @@
-class Spoon extends Object{
+class Spoon extends Elemento{
 
     constructor(){
 

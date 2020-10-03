@@ -1,4 +1,4 @@
-class Object {
+class Elemento {
 
     constructor(app, x, y) {
 
@@ -6,10 +6,9 @@ class Object {
         this.x = x;
         this.y = y;
        
-
     }
 
-    drawObject(){
+    drawElemento(){
 
     }
 

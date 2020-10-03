@@ -1,4 +1,4 @@
-class Mouse extends Object{
+class Mouse extends Elemento{
 
     constructor(){
 

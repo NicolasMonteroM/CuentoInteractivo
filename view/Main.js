@@ -4,7 +4,6 @@ new p5(function (app) {
 
         controller = new Controller(app);
        
-
     }
 
     app.setup = function () {
@@ -12,7 +11,6 @@ new p5(function (app) {
         app.createCanvas(1200, 700);
 
         //–––––––––– THE FILE IS GOING TO BE DOWNLOADED ––––––––––––––//
-
         controller.saveChanges();
 
     }
@@ -29,6 +27,8 @@ new p5(function (app) {
     }
 
     app.mousePressed = function () {
+
+      //  controller.mouseController();
 
     }
 }

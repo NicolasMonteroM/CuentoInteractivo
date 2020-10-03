@@ -1,4 +1,4 @@
-class Stick extends Object {
+class Stick extends Elemento {
 
     constructor(app, x, y) {
 
@@ -7,22 +7,9 @@ class Stick extends Object {
 
     }
 
-    drawObject() {
+    drawElemento() {
 
-
-        this.app.image(this.stickImage, this.x, this.y, 30, 20);
-
-    }
-
-    getPosX() {
-
-        return this.x;
-
-    }
-
-    getPosY() {
-
-        return this.y;
+        this.app.image(this.stickImage, this.x, this.y, 100, 60);
 
     }
 

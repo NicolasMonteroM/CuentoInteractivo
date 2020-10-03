@@ -1,8 +1,3 @@
-
-let title;
-let spoon;
-let stick;
-
 let tale = [];
 let scene = [];
 
@@ -30,8 +25,6 @@ class Logica {
 
     drawTale() {
 
-
-
         this.app.fill(77, 53, 22);
         this.app.textSize(17);
         this.app.textAlign(this.app.CENTER);
@@ -49,10 +42,7 @@ class Logica {
         this.scene = this.tale.slice(0, 1);
 
         // console.log(this.scene);
-
-       // this.stick.drawObject();
        
-
     }
 
     loadTale() {
