@@ -15,6 +15,9 @@ new p5(function (app) {
 
         app.createCanvas(1200, 700);
 
+
+        //–––––––––– THE FILE IS GOING TO BE DOWNLOADED ––––––––––––––//
+
         logica.saveTale();
 
     }
@@ -22,7 +25,7 @@ new p5(function (app) {
 
     app.draw = function () {
 
-        app.background(77,53,22);
+        app.background(77, 53, 22);
         fondo.drawFondo();
         logica.drawTale();
 

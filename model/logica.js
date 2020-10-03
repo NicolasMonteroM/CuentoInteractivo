@@ -23,6 +23,7 @@ class Logica {
         this.fifthInteraction = false;
 
         this.font = this.app.loadFont('./data/times.ttf');
+        this.titleFont = this.app.loadFont('./data/tioxo.otf');
 
 
     }
@@ -30,18 +31,25 @@ class Logica {
     drawTale() {
 
         this.app.fill(77, 53, 22);
-        this.app.textSize(16);
+        this.app.textSize(17);
         this.app.textAlign(this.app.CENTER);
 
+        //writing scene
         this.app.textFont(this.font);
-        this.app.text(this.scene, 250, 200, 1200 - 500);
+        this.app.text(this.scene, 250, 250, 1200 - 500);
+
+        //writing title
+        this.app.textSize(30);
+        this.app.textFont(this.titleFont);
+        this.app.text('The Mouse, the bird, and the Sausage', 450, 150, 1200 - 900);
+
 
         // console.log(this.scene);
 
     }
 
     loadTale() {
-        
+
         //loading tale
         this.tale = this.app.loadStrings('./data/tale.txt');
 
@@ -52,21 +60,27 @@ class Logica {
 
     }
 
+
+    //–––––––––– THE FILE IS GOING TO BE DOWNLOADED ––––––––––––––//
     saveTale() {
 
-        //changing words 
-        for (let i = 0; i < this.tale.length; i++) {
-            this.tale[i] = this.tale[i].replaceAll("wood", "WOOD");
-            this.tale[i] = this.tale[i].replaceAll("mouse", "MOUSE");
-            this.tale[i] = this.tale[i].replaceAll("bird", "BIRD");
-            this.tale[i] = this.tale[i].replaceAll("sausage", "SAUSAGE");
-            this.tale[i] = this.tale[i].replaceAll("cooking", "COOKING");
-            this.tale[i] = this.tale[i].replaceAll("water", "WATER");
-            this.tale[i] = this.tale[i].replaceAll("table", "TABLE");
+        //the tale is going to be downloaded after finishing the interactions
+        if (this.firstInteraction, this.secondInteraction, this.thirdInteraction, this.fourthtInteraction, this.fifthInteraction) {
+           
+            //changing words 
+            for (let i = 0; i < this.tale.length; i++) {
+                this.tale[i] = this.tale[i].replaceAll("wood", "WOOD");
+                this.tale[i] = this.tale[i].replaceAll("mouse", "MOUSE");
+                this.tale[i] = this.tale[i].replaceAll("bird", "BIRD");
+                this.tale[i] = this.tale[i].replaceAll("sausage", "SAUSAGE");
+                this.tale[i] = this.tale[i].replaceAll("cooking", "COOKING");
+                this.tale[i] = this.tale[i].replaceAll("water", "WATER");
+                this.tale[i] = this.tale[i].replaceAll("table", "TABLE");
+            }
+
+            //saving txt file
+            this.app.saveStrings(this.tale, 'EditedTale.txt');
+
         }
-
-        //saving txt file
-        this.app.saveStrings('EditedTale.txt', this.tale);
-
     }
 }
