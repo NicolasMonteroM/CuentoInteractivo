@@ -1,15 +1,17 @@
+let stickImage
+
 class Stick extends Object {
 
     constructor(app, x, y) {
 
         super(app, x, y);
-        this.stick = this.app.loadImage("./data/images/stick.png");
+       // this.stickImage = this.app.loadImage("./data/images/stick.png");
 
     }
 
-    drawObject(){
+    drawObject() {
 
-        this.app.image(this.stick, this.x , this.y, 30, 20);
+        this.app.image(this.stickImage, this.x, this.y, 30, 20);
 
     }
 

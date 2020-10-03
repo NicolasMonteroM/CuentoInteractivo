@@ -14,7 +14,6 @@ class Logica {
     constructor(app) {
 
         this.app = app;
-        this.stick = new Stick(app, 0, 0);
 
         //interactions
         this.firstInteraction = false;
@@ -26,10 +25,14 @@ class Logica {
         this.font = this.app.loadFont('./data/times.ttf');
         this.titleFont = this.app.loadFont('./data/tioxo.otf');
 
+        this.stick = new Stick(this, 500, 500);
+
 
     }
 
     drawTale() {
+
+
 
         this.app.fill(77, 53, 22);
         this.app.textSize(17);
@@ -49,6 +52,9 @@ class Logica {
 
         // console.log(this.scene);
 
+       // this.stick.drawObject();
+       
+
     }
 
     loadTale() {
@@ -62,7 +68,7 @@ class Logica {
     saveTale() {
 
         //the tale is going to be downloaded after finishing the interactions
-        if (this.firstInteraction, this.secondInteraction, this.thirdInteraction, this.fourthtInteraction, this.fifthInteraction) {
+        //if (this.firstInteraction, this.secondInteraction, this.thirdInteraction, this.fourthtInteraction, this.fifthInteraction) {
 
             //changing words 
             for (let i = 0; i < this.tale.length; i++) {
@@ -78,6 +84,6 @@ class Logica {
             //saving txt file
             this.app.saveStrings(this.tale, 'The Mouse, the Bird, and the Sausage.txt');
 
-        }
+       // }
     }
 }
