@@ -1,6 +1,6 @@
 class Bucket extends Object{
 
-    contructor(){
+    constructor(){
 
     }
 }

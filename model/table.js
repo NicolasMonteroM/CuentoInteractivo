@@ -1,6 +1,11 @@
 class Tables extends Object{
 
-    contructor(){
+    constructor(){
+
+    }
+
+    drawObject(){
+
 
     }
 }

@@ -1,6 +1,6 @@
 class Spoon extends Object{
 
-    contructor(){
+    constructor(){
 
     }
 }

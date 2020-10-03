@@ -10,10 +10,6 @@ class Object{
 
     }
 
-    drawObject(){
-
-
-    }
 
     setPosX(){
 
