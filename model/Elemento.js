@@ -10,6 +10,8 @@ class Elemento {
 
     drawElemento(){
 
+
+
     }
 
     setPosX(x) {

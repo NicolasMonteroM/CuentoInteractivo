@@ -22,13 +22,9 @@ new p5(function (app) {
 
     }
 
-    app.mouseDragged = function () {
-
-    }
-
     app.mousePressed = function () {
 
-      //  controller.mouseController();
+        controller.mouseController();
 
     }
 }
